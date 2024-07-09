@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <!-- Lien vers Bootstrap (à insérer ici) -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Votre feuille de style personnalisée -->
+</head>
+<body>
+    <header>
+        <!-- Barre de navigation Bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Mon Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>À propos de moi</h2>
+            <p>Écrivez ici une brève description de vous-même et de vos compétences.</p>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <!-- Insérez ici vos projets sous forme de cartes Bootstrap -->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="img/projet1.jpg" alt="Projet 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Nom du Projet</h5>
+                            <p class="card-text">Description du projet.</p>
+                            <a href="#" class="btn btn-primary">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ajoutez d'autres projets similaires -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <!-- Formulaire de contact Bootstrap -->
+            <form>
+                <div class="form-group">
+                    <label for="name">Nom</label>
+                    <input type="text" class="form-control" id="name" placeholder="Votre nom">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Votre email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Votre message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts JavaScript nécessaires à Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
